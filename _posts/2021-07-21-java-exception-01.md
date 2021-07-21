@@ -103,7 +103,7 @@ public class Main {
 		try {
 			Processor.process();
 		} catch (NullPointerException e) {
-			System.out.println("Processor.process()에서 발생한 Exception을 Main에서 처리했습니다.");
+			System.out.println("Processor.process()에서 발생한 Exception을 Main에서 처리했다.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
