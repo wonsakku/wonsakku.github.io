@@ -28,9 +28,9 @@ public class Person {
 public class Processor {
   public static void process(){
     Person person = null;
-    try {
-    	person.getAge();
-		System.out.println("Exception이 발생해서 try 블록은 여기부터 진행되지 않습니다.");
+    try {    
+    	person.getAge(); 
+      System.out.println("Exception이 발생해서 try 블록은 여기부터 진행되지 않습니다.");
     }catch (NullPointerException e) {
       System.out.println("person이 null이라서 NullPointerException이 발생했습니다.");
     }catch (Exception e) {
@@ -55,13 +55,9 @@ public class Main {
 
 <br>
 
-```
-person이 null이라서 NullPointerException이 발생했습니다.
-****************************
-Processor.process() is Done!
-****************************
-Main.main() 종료
-```
+
+![dexception-image-01-01](/assets/images/2021/07/2021-07-20-java-exception-01-01.jpg)
+
 
 
 <br>
@@ -119,10 +115,7 @@ public class Main {
 
 <br>
 
-```
-Processor.process()에서 발생한 Exception을 Main에서 처리했습니다.
-Main.main() 종료
-```
+![exception-image-01-02](/assets/images/2021/07/2021-07-20-java-exception-01-02.jpg)
 
 <br>
 
