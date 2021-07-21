@@ -287,3 +287,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      sidebar:
+        nav: "main-subject"

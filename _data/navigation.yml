@@ -10,3 +10,18 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+main-subject:
+  - title: Java
+    children:
+      - title: "Java"
+        url: /java/
+      - title: "Design Pattern"
+        url: /design-pattern/
+      - title: "Spring"
+        url: /spring/
+  - title: etc
+    children:
+      - title: "Blog"
+        url: /blog/
+
