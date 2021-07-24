@@ -224,13 +224,15 @@ public class TestController {
 
 <br>
 
-위의 코드를 살펴보면 service단에서 email 중복이 아닌 다른 이유로 Exception이 발생했다. 하지만 service의 try-cath 블럭에서  Exception을 처리했기 때문에 testService.badCase()의 로직은 isComplete(false)를 return시키면서 완료가 된다. 결국 controller에서는 isComplete를 false로 받았기 때문에 클라이언트에는 email이 중복되었다는 메세지를 보내게 된다. 즉, service단에서 어떠한 Exception이 발생하더라도 클라이언트 쪽에서는 email이 중복되었다는 메세지만 받게 되는 황당한 경우를 겪게 된다.   
+위의 코드를 살펴보면 service단에서 email 중복이 아닌 다른 이유로 Exception이 발생했다. 하지만 service의 try-catch 블럭에서  Exception을 처리했기 때문에 testService.badCase()의 로직은 isComplete(false)를 return시키면서 완료가 된다. 결국 controller에서는 isComplete를 false로 받았기 때문에 클라이언트에는 email이 중복되었다는 메세지를 보내게 된다. 즉, service단에서 어떠한 Exception이 발생하더라도 클라이언트 쪽에서는 email이 중복되었다는 메세지만 받게 되는 황당한 경우를 겪게 된다.   
 
 위의 코드를 작성할 때는 email 중복이 일어날 때 throw Exception을 날리기 때문에 email 중복 이외에는 예외가 발생하지 않을 것이라는 엄청난 확신(?)을 가졌던 것 같다. ~~'무식하면 용감하다'라는 말이 어울리는 것 같다.~~
 
 <br>
 
 ___
+
+<br>
 
 ## 글을 마치며
 

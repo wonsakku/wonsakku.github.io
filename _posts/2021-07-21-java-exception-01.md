@@ -63,7 +63,7 @@ public class Main {
 <br>
 
 
-위의 그림을 보면 Process.process()의 try 블록에서 Exception이 발생했을 때 그 이후의 코드 흐름은 catch 구문으로 넘어가고 process() 작업을 완전히 끝낸 것을 확인할 수 있다.
+위의 그림을 보면 Processor.process()의 try 블록에서 Exception이 발생했을 때 그 이후의 코드 흐름은 catch 구문으로 넘어가고 process() 작업을 완전히 끝낸 것을 확인할 수 있다.
 
 ___
 
